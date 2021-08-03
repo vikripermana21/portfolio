@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import GlobalStyle from './globalStyles';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import wavingHand from '@iconify-icons/emojione/waving-hand';
 import downloadIcon from '@iconify-icons/akar-icons/download';
 import Typed from 'react-typed';
@@ -238,7 +238,7 @@ function App() {
                     </div>
                     <ScrollAnimation animateIn="fadeIn" duration={1} delay={1200}>
                         <div className="button">
-                            <Button className="large">
+                            <Button href="assets/Resume.pdf" className="large" download>
                                 <span class="front">
                                     <Icon icon={downloadIcon} /> resume
                                 </span>

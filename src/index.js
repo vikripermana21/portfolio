@@ -7,7 +7,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import "animate.css/animate.compat.css";
 import "animate.css/animate.min.css";
