@@ -238,7 +238,7 @@ function App() {
                     </div>
                     <ScrollAnimation animateIn="fadeIn" duration={1} delay={1200}>
                         <div className="button">
-                            <Button href="assets/Resume.pdf" className="large" download>
+                            <Button href="assets/vikri-resume.pdf" className="large" download>
                                 <span class="front">
                                     <Icon icon={downloadIcon} /> resume
                                 </span>
