@@ -11,6 +11,7 @@ const Container = styled.div`
 width:100%;
 height:100%;
 background:#FFD60A;
+overflow:hidden;
 `
 const HeroSection = styled.div`
 width:100vw;
@@ -22,6 +23,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
+overflow:hidden;
 
 div.teks{
     margin-bottom:40px;
@@ -142,6 +144,7 @@ background:#FFD60A;
 display:flex;
 justify-content:center;
 padding:100px 0px;
+overflow:hidden;
 
 div.about-wrapper{
     width:90%;
@@ -187,24 +190,21 @@ div.teks-wrap{
 
     }
     div.column-1{
+        overflow:hidden;
         margin-bottom:40px;
         img{
-            position:absolute;
             visibility:hidden;
+            width:20px;            
         }
     }
     div.column-2{
         width:100%;
         height:100%;
-        padding-left:20px;
-    
-    div.teks-wrap{
-    }
     
         h1{
             font-family: 'Bungee', cursive;
-            margin-left:60px;
             color:#C55218;
+            margin-left:0px;
             font-size:3rem;
             -webkit-text-stroke: 2px black;
         }
@@ -225,10 +225,10 @@ display:flex;
 align-items:center;
 padding:100px 0px;
 flex-direction:column;
+overflow:hidden;
 
 h1.title{
     font-family: 'Bungee', cursive;
-    margin-left:60px;
     color:#C55218;
     font-size:8rem;
     -webkit-text-stroke: 1px black;
@@ -243,7 +243,6 @@ flex-wrap:wrap;
 @media (max-width: 768px) {
     h1.title{
         font-family: 'Bungee', cursive;
-        margin-left:60px;
         color:#C55218;
         font-size:3rem;
         -webkit-text-stroke: 1px black;
@@ -290,7 +289,7 @@ height:100%;
 width:100%;
 background:#FFD60A;
 padding:100px 10px 10px 10px;
-
+overflow:hidden;
 div.container{
     width:90%;
     display:flex;
