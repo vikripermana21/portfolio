@@ -57,6 +57,49 @@ h1{
     margin-bottom:20px;
 }
 
+@media (max-width: 1024px) {
+    p{
+        font-family: 'Overpass Mono', monospace;
+        color:white;
+        font-size:2vw
+    }
+    
+    h1{
+        font-family: 'Bungee', cursive;
+        color:#C55218;
+        font-size:20vw;
+        line-height:80%;
+        margin-bottom:20px;
+    }
+  }
+
+@media (max-width: 768px) {
+    p{
+        font-family: 'Overpass Mono', monospace;
+        color:white;
+        font-size:3vw;
+    }
+    
+    div.role{
+        display:flex;
+        justify-content:center;
+    
+        *{
+            color:white;
+            font-family: 'Overpass Mono', monospace;
+            font-size:3vw;
+        }
+    }
+
+    h1{
+        font-family: 'Bungee', cursive;
+        color:#C55218;
+        font-size:20vw;
+        line-height:80%;
+        margin-bottom:20px;
+    }
+  }
+
 `
 
 const Button = styled.a`
@@ -135,6 +178,43 @@ div.teks-wrap{
         font-size:1.7rem
     }
 }
+
+@media (max-width: 1024px) {
+    div.about-wrapper{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+    }
+    div.column-1{
+        margin-bottom:40px;
+        img{
+            position:absolute;
+            visibility:hidden;
+        }
+    }
+    div.column-2{
+        width:100%;
+        height:100%;
+        padding-left:20px;
+    
+    div.teks-wrap{
+    }
+    
+        h1{
+            font-family: 'Bungee', cursive;
+            margin-left:60px;
+            color:#C55218;
+            font-size:3rem;
+            -webkit-text-stroke: 2px black;
+        }
+        p{
+            font-family: 'Overpass Mono', monospace;
+            font-size:1.2rem
+        }
+    }
+  }
+
 `
 
 const ProjectSection = styled.div`
@@ -159,6 +239,23 @@ display:flex;
 justify-content:space-evenly;
 flex-wrap:wrap;
 }
+
+@media (max-width: 768px) {
+    h1.title{
+        font-family: 'Bungee', cursive;
+        margin-left:60px;
+        color:#C55218;
+        font-size:3rem;
+        -webkit-text-stroke: 1px black;
+    }
+    div.project{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        }
+  }
+
 `
 
 const Kotak = styled.div`
@@ -181,7 +278,12 @@ h1{
     font-family: 'Overpass Mono', monospace;
         font-size:1.7rem
 }
-`
+
+@media (max-width: 768px) {
+    height:200px;
+width:200px;
+
+}    `
 
 const EndSection = styled.div`
 height:100%;
@@ -202,6 +304,24 @@ h1{
 p{
     font-family: 'Overpass Mono', monospace;
     font-size:1.4rem;
+}
+
+@media (max-width: 768px) {
+    div.container{
+        width:100%;
+        display:flex;
+    justify-content:space-between;
+    }
+    
+    h1{
+        font-family: 'Overpass Mono', monospace;
+        font-size:0.6rem;
+    }
+    p{
+        font-family: 'Overpass Mono', monospace;
+        font-size:0.6rem;
+    }
+
 }
 `
 
@@ -250,7 +370,7 @@ function App() {
                     <div className="about-wrapper">
                         <ScrollAnimation animateIn="fadeIn">
                             <div className="column-1">
-                                <img src="assets/photo/profile.jpeg" alt="" />
+                                <img src="assets/photo/Profile.jpeg" alt="" />
                             </div>
                         </ScrollAnimation>
                         <div className="column-2">
